@@ -20,7 +20,7 @@ class HiSinatra < Sinatra::Base
   end
 
   get '/play/throw/:player_choice' do
-    options = ['rock', 'paper', 'scissor']
+    options = %w(rock paper scissor)
     machine_choice = rand(options.length)
     player_choice = params[:player_choice]
 
