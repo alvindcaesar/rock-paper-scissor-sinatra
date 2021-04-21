@@ -1,3 +1,3 @@
 require './app'
 
-run HiSinatra
+run RockPaperScissor

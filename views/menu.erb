@@ -1,4 +1,11 @@
 <h1>Menu</h1>
-<h2>Hello <%= @player_name%>, are you ready to start the game?</h2>
+<h2>Hello <%= @player_name%>, put how many rounds you want to play and start the game</h2>
 
-<a href="/play"><button type="button" name="button">START</button></a>
+
+
+<form class="" action="/play" method="post">
+  <input type="number" name="rounds" value="">
+  <input type="Submit" name="" value="START THE GAME">
+
+</form>
+<!-- <a href="/play"><button type="button" name="button">START</button></a> -->

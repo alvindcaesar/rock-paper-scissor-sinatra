@@ -1,8 +1,17 @@
 <h1>Play</h1>
 
 <h2>Select your weapon</h2>
-<p><%= @machine_answer %></p>
+
+<p>You have decided to play <%= @rounds %> rounds.</p>
+
+<p>Computer choice: <%= @machine_answer %></p>
 <p><%= @result %></p>
+
+
+<% if @count == @rounds %>
+<p>Your chances is over</p>
+
+<% else %>
 
 <a href="/play/throw/rock">
 <button type="button" name="button">ROCK</button>
@@ -15,3 +24,5 @@
 <a href="/play/throw/scissor">
 <button type="button" name="button">SCISSOR</button>
 </a>
+
+<% end %>
