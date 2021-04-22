@@ -1,0 +1,25 @@
+<h2>Select Your Choice</h2>
+
+<p>Rounds Remaining: <%= @count %></p>
+<p>Computer choice: <%= @computer_answer %></p>
+<p>Result: <%= @result %></p>
+
+  <p> Select your option</p>
+
+
+  <% if @count == 0 %>
+  <p>Your chances is over</p>
+  <a href="/results"><button type="button" name="button">View My Results</button></a>
+
+  <% else %>
+  <a href='/game/throw/Rock'>
+    <button type = "button" name = "button">Rock</button>
+  </a>
+  <a href='/game/throw/Paper'>
+    <button type = "button" name = "button">Paper</button>
+  </a>
+  <a href='/game/throw/Scissors'>
+    <button type = "button" name = "button">Scissors</button>
+  </a>
+
+  <% end %>

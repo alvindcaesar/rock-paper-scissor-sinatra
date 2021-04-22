@@ -13,15 +13,17 @@ GEM
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
+    webrick (1.7.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   sinatra
+  webrick
 
 RUBY VERSION
-   ruby 3.0.1p64
+   ruby 3.0.0p0
 
 BUNDLED WITH
-   2.2.15
+   2.2.3

@@ -1,3 +1,12 @@
 <h1>Result Page</h1>
 
-<%= @final_results %>
+<%= @results %>
+
+<h2><%= @player_name%>'s results:'</h2>
+<p>Win: <%= @win_results %></p>
+<p>Lose: <%= @lose_results %></p>
+<p>Ties: <%= @ties_results %></p>
+
+<a href="/rounds"><button type="button" name="button">Play again</button></a>
+<a href="/"><button type="button" name="button">New Player</button></a>
+<a href="#"><button type="button" name="button">View leaderboard</button></a>
